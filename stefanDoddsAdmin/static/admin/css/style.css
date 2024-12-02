@@ -1,0 +1,105 @@
+body {
+    align-items: center;
+}
+
+/* Base styles for all overlays */
+.overlay {
+    background: url('https://www.stefandodds.ie/libs/images/cape-viewing.png') top center / cover no-repeat; /* Full-page photo background */
+    position: fixed;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 25px;
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease;
+    border: 5px solid #fff; 
+}
+
+/* Close button styling */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 7px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #de2c2e;
+    z-index: 1010;
+}
+
+/* Layout inside overlay */
+.sticky-this {
+    position:sticky;
+    height:auto;
+    top:0px;
+    padding: 5px;
+    overflow: auto;
+  }
+
+  /* Animation keyframes for each direction */
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInTop {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+/* Slide out to the left */
+@keyframes slideOutLeft {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+/* Slide out to the right */
+@keyframes slideOutRight {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+}
+
+/* Slide out to the top */
+@keyframes slideOutTop {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100%); }
+}
+
+/* Left overlay animation */
+.overlay-left.active {
+    display: flex;
+    animation: slideInLeft 1s forwards;
+}
+
+/* Right overlay animation */
+.overlay-right.active {
+    display: flex;
+    animation: slideInRight 1s forwards;
+}
+
+/* Top overlay animation */
+.overlay-top.active {
+    display: flex;
+    animation: slideInTop 1s forwards;
+}
+
+/* Left overlay slide-out */
+.overlay-left.closing {
+    animation: slideOutLeft 1s forwards;
+}
+
+/* Right overlay slide-out */
+.overlay-right.closing {
+    animation: slideOutRight 1s forwards;
+}
+
+/* Top overlay slide-out */
+.overlay-top.closing {
+    animation: slideOutTop 1s forwards;
+}

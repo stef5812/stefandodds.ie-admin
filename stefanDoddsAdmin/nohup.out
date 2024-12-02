@@ -1,0 +1,1342 @@
+Watching for file changes with StatReloader
+[25/Nov/2024 11:22:22] "GET /admin/ HTTP/1.1" 302 0
+[25/Nov/2024 11:22:22] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[25/Nov/2024 11:23:23] "GET /admin/ HTTP/1.1" 302 0
+[25/Nov/2024 11:23:23] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+Internal Server Error: /admin_section/contact/
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/admin_section/views.py", line 13, in contact_view
+    return render(request, 'admin_section/contact.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: admin_section/contact.html
+[25/Nov/2024 11:28:50] "GET /admin_section/contact/ HTTP/1.1" 500 80006
+[25/Nov/2024 11:29:26] "GET /admin/ HTTP/1.1" 302 0
+[25/Nov/2024 11:29:26] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[25/Nov/2024 11:31:16] "GET /admin_section/contact/ HTTP/1.1" 200 838
+Not Found: /libs/images/Logo.png
+[25/Nov/2024 11:31:16] "GET /libs/images/Logo.png HTTP/1.1" 404 2727
+Not Found: /libs/images/cape-viewing.png
+[25/Nov/2024 11:31:16] "GET /libs/images/cape-viewing.png HTTP/1.1" 404 2751
+[25/Nov/2024 11:31:36] "GET /admin/ HTTP/1.1" 302 0
+[25/Nov/2024 11:31:36] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[25/Nov/2024 11:31:42] "GET /admin_section/contact/ HTTP/1.1" 200 838
+Not Found: /libs/images/Logo.png
+[25/Nov/2024 11:31:43] "GET /libs/images/Logo.png HTTP/1.1" 404 2727
+Not Found: /libs/images/cape-viewing.png
+[25/Nov/2024 11:31:43] "GET /libs/images/cape-viewing.png HTTP/1.1" 404 2751
+[25/Nov/2024 11:31:53] "GET /admin_section/gallery/ HTTP/1.1" 200 908
+Not Found: /libs/images/Logo.png
+[25/Nov/2024 11:31:53] "GET /libs/images/Logo.png HTTP/1.1" 404 2727
+Not Found: /libs/images/cape-viewing.png
+[25/Nov/2024 11:31:53] "GET /libs/images/cape-viewing.png HTTP/1.1" 404 2751
+[25/Nov/2024 11:32:15] "GET /admin/ HTTP/1.1" 302 0
+[25/Nov/2024 11:32:15] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[25/Nov/2024 11:32:21] "GET /admin_section/contact/ HTTP/1.1" 200 838
+Not Found: /libs/images/Logo.png
+[25/Nov/2024 11:32:21] "GET /libs/images/Logo.png HTTP/1.1" 404 2727
+Not Found: /libs/images/cape-viewing.png
+[25/Nov/2024 11:32:21] "GET /libs/images/cape-viewing.png HTTP/1.1" 404 2751
+[25/Nov/2024 11:32:38] "GET /admin/ HTTP/1.1" 302 0
+[25/Nov/2024 11:32:38] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[25/Nov/2024 11:32:44] "GET /admin_section/contact/ HTTP/1.1" 200 838
+Not Found: /libs/images/Logo.png
+[25/Nov/2024 11:32:44] "GET /libs/images/Logo.png HTTP/1.1" 404 2727
+Not Found: /libs/images/cape-viewing.png
+[25/Nov/2024 11:32:44] "GET /libs/images/cape-viewing.png HTTP/1.1" 404 2751
+Internal Server Error: /admin_section/contact/
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/admin_section/views.py", line 13, in contact_view
+    return render(request, 'admin_section/contact.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+[25/Nov/2024 11:33:55] "GET /admin_section/contact/ HTTP/1.1" 500 127071
+Internal Server Error: /admin_section/contact/
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/admin_section/views.py", line 13, in contact_view
+    return render(request, 'admin_section/contact.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+[25/Nov/2024 11:34:33] "GET /admin_section/contact/ HTTP/1.1" 500 127208
+Internal Server Error: /admin_section/contact/
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/admin_section/views.py", line 13, in contact_view
+    return render(request, 'admin_section/contact.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+[25/Nov/2024 11:34:34] "GET /admin_section/contact/ HTTP/1.1" 500 127208
+[25/Nov/2024 11:34:47] "GET /admin_section/contact/ HTTP/1.1" 200 838
+Not Found: /libs/images/Logo.png
+[25/Nov/2024 11:34:47] "GET /libs/images/Logo.png HTTP/1.1" 404 2727
+Not Found: /libs/images/cape-viewing.png
+[25/Nov/2024 11:34:47] "GET /libs/images/cape-viewing.png HTTP/1.1" 404 2751
+[25/Nov/2024 11:35:02] "GET /admin_section/contact/ HTTP/1.1" 200 852
+Not Found: /libs/images/Logo.png
+[25/Nov/2024 11:35:02] "GET /libs/images/Logo.png HTTP/1.1" 404 2727
+Not Found: /admin_section/contact/stefandodds.ie/libs/images/cape-viewing.png
+[25/Nov/2024 11:35:02] "GET /admin_section/contact/stefandodds.ie/libs/images/cape-viewing.png HTTP/1.1" 404 3247
+[25/Nov/2024 11:35:03] "GET /admin_section/contact/ HTTP/1.1" 200 852
+Not Found: /libs/images/Logo.png
+[25/Nov/2024 11:35:03] "GET /libs/images/Logo.png HTTP/1.1" 404 2727
+Not Found: /admin_section/contact/stefandodds.ie/libs/images/cape-viewing.png
+[25/Nov/2024 11:35:03] "GET /admin_section/contact/stefandodds.ie/libs/images/cape-viewing.png HTTP/1.1" 404 3247
+[25/Nov/2024 11:35:58] "GET /admin_section/contact/ HTTP/1.1" 200 878
+[25/Nov/2024 11:36:02] "GET /admin_section/contact/ HTTP/1.1" 200 878
+[25/Nov/2024 11:36:19] "GET /admin_section/gallery/ HTTP/1.1" 200 948
+Internal Server Error: /admin_section/gallery/
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/admin_section/views.py", line 20, in gallery_view
+    return redirect('gallery_success')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'gallery_success' not found. 'gallery_success' is not a valid view function or pattern name.
+[25/Nov/2024 11:36:44] "POST /admin_section/gallery/ HTTP/1.1" 500 84298
+/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/admin_section/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 25, 2024 - 11:21:50
+Django version 5.1.3, using settings 'stefanDoddsAdmin.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 44, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 63, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/stefanDoddsAdmin/urls.py", line 30, in <module>
+    path('admin_section/', include('admin_section.urls')),
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/admin_section/urls.py", line 2, in <module>
+    from .views import contact_view, gallery_view, gallery_success_view
+ImportError: cannot import name 'gallery_success_view' from 'admin_section.views' (/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/admin_section/views.py)
+/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/admin_section/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 136, in check_custom_error_handlers
+    handler = resolver.resolve_error_handler(status_code)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 732, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/stefanDoddsAdmin/urls.py", line 30, in <module>
+    path('admin_section/', include('admin_section.urls')),
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/admin_section/urls.py", line 7, in <module>
+    path('gallery/success/', views.gallery_success_view, name='gallery_success'),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'admin_section.views' has no attribute 'gallery_success_view'
+/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/admin_section/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/stefanDoddsAdmin/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 25, 2024 - 11:55:55
+Django version 5.1.3, using settings 'stefanDoddsAdmin.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/stefanDoddsAdmin/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 25, 2024 - 11:57:51
+Django version 5.1.3, using settings 'stefanDoddsAdmin.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 44, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 63, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/stefanDoddsAdmin/urls.py", line 23, in <module>
+    from .views import home_view  # Import your home view here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'stefanDoddsAdmin.views'
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 44, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 63, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/stefanDoddsAdmin/urls.py", line 23, in <module>
+    from .views import home_view  # Import your home view here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'stefanDoddsAdmin.views'
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 44, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 63, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/stefanDoddsAdmin/urls.py", line 23, in <module>
+    from .views import home_view  # Import your home view here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'stefanDoddsAdmin.views'
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 44, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 63, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/stefanDoddsAdmin/urls.py", line 23, in <module>
+    from .views import home_view  # Import your home view here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'stefanDoddsAdmin.views'
+Watching for file changes with StatReloader
+Performing system checks...
+
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 25, 2024 - 12:29:27
+Django version 5.1.3, using settings 'stefanDoddsAdmin.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[25/Nov/2024 16:18:16] "GET /admin/ HTTP/1.1" 302 0
+[25/Nov/2024 16:18:16] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[25/Nov/2024 16:18:38] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[25/Nov/2024 16:18:38] "GET /admin/ HTTP/1.1" 200 5855
+[25/Nov/2024 16:18:42] "GET /admin_section/contact/ HTTP/1.1" 200 878
+[25/Nov/2024 16:18:52] "GET /admin_section/gallery/ HTTP/1.1" 200 1043
+[25/Nov/2024 16:18:52] "GET /media/gallery/IMG_0743.jpg HTTP/1.1" 200 846097
+[25/Nov/2024 16:19:12] "GET /admin_section/gallery/ HTTP/1.1" 200 1043
+[25/Nov/2024 16:19:30] "GET /admin_section/gallery/ HTTP/1.1" 200 1043
+[25/Nov/2024 16:19:36] "GET /admin_section/gallery/ HTTP/1.1" 200 1043
+[25/Nov/2024 16:21:06] "GET /admin/ HTTP/1.1" 200 5855
+[25/Nov/2024 16:22:15] "GET /admin/ HTTP/1.1" 200 5855
+[25/Nov/2024 16:22:18] "POST /admin/logout/ HTTP/1.1" 200 3555
+[25/Nov/2024 16:22:23] "GET /admin/ HTTP/1.1" 302 0
+[25/Nov/2024 16:22:23] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[25/Nov/2024 16:22:27] "GET /admin_section/gallery/ HTTP/1.1" 200 1043
+[25/Nov/2024 16:33:08] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[25/Nov/2024 16:33:45] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[25/Nov/2024 16:37:45] "GET /admin/ HTTP/1.1" 302 0
+[25/Nov/2024 16:37:45] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[25/Nov/2024 16:42:15] "GET /admin_section/gallery/ HTTP/1.1" 200 1043
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[26/Nov/2024 04:24:35] "GET / HTTP/1.1" 400 65997
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[26/Nov/2024 04:31:07] "GET /favicon.ico HTTP/1.1" 400 66007
+[26/Nov/2024 09:34:03] "GET /admin_section/gallery/ HTTP/1.1" 200 1043
+[26/Nov/2024 09:34:03] "GET /media/gallery/IMG_0743.jpg HTTP/1.1" 304 0
+[26/Nov/2024 09:34:21] "POST /admin_section/gallery/ HTTP/1.1" 302 0
+Internal Server Error: /admin_section/gallery/success/
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/admin_section/views.py", line 27, in gallery_success_view
+    return render(request, 'admin_section/gallery_success.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: admin_section/gallery_success.html
+[26/Nov/2024 09:34:21] "GET /admin_section/gallery/success/ HTTP/1.1" 500 79165
+[26/Nov/2024 09:35:11] "GET /admin_section/gallery/success/ HTTP/1.1" 200 480
+[26/Nov/2024 09:35:14] "GET /admin_section/gallery/ HTTP/1.1" 200 1145
+[26/Nov/2024 09:35:14] "GET /media/gallery/20200716_172448.jpg HTTP/1.1" 200 5226931
+[26/Nov/2024 09:35:35] "POST /admin_section/gallery/ HTTP/1.1" 302 0
+[26/Nov/2024 09:35:36] "GET /admin_section/gallery/success/ HTTP/1.1" 200 480
+[26/Nov/2024 09:35:38] "GET /admin_section/gallery/ HTTP/1.1" 200 1247
+[26/Nov/2024 09:35:38] "GET /media/gallery/20200716_172448.jpg HTTP/1.1" 304 0
+[26/Nov/2024 09:35:38] "GET /media/gallery/20200901_124501.jpg HTTP/1.1" 200 4604033
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 25, 2024 - 12:32:15
+Django version 5.1.3, using settings 'stefanDoddsAdmin.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[26/Nov/2024 10:43:24] "GET /admin/ HTTP/1.1" 302 0
+[26/Nov/2024 10:43:24] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[26/Nov/2024 10:43:38] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[26/Nov/2024 10:43:39] "GET /admin/ HTTP/1.1" 200 5855
+[26/Nov/2024 10:43:39] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[26/Nov/2024 10:43:39] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[26/Nov/2024 10:43:39] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[26/Nov/2024 10:43:44] "GET /admin/auth/user/ HTTP/1.1" 200 11080
+[26/Nov/2024 10:43:44] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+[26/Nov/2024 10:43:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 10:43:44] "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+[26/Nov/2024 10:43:44] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[26/Nov/2024 10:43:44] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[26/Nov/2024 10:43:44] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[26/Nov/2024 10:43:44] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[26/Nov/2024 10:43:44] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[26/Nov/2024 10:43:44] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[26/Nov/2024 10:43:44] "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+[26/Nov/2024 10:43:44] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[26/Nov/2024 10:43:44] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+[26/Nov/2024 10:43:44] "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[26/Nov/2024 10:43:44] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[26/Nov/2024 10:43:44] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[26/Nov/2024 10:43:44] "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/stefanDoddsAdmin/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 26, 2024 - 10:43:05
+Django version 5.1.3, using settings 'stefanDoddsAdmin.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 44, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 63, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/stefanDoddsAdmin/urls.py", line 23, in <module>
+    from .views import home_view, dynamic_content  # Import your home view here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'dynamic_content' from 'stefanDoddsAdmin.views' (/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/stefanDoddsAdmin/views.py)
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 44, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 63, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/stefanDoddsAdmin/urls.py", line 23, in <module>
+    from .views import home_view, dynamic_content  # Import your home view here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'dynamic_content' from 'stefanDoddsAdmin.views' (/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/stefanDoddsAdmin/views.py)
+Watching for file changes with StatReloader
+[27/Nov/2024 09:06:16] "GET /admin/ HTTP/1.1" 302 0
+[27/Nov/2024 09:06:16] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[27/Nov/2024 09:06:16] "GET /static/admin/css/login.css HTTP/1.1" 200 951
+Watching for file changes with StatReloader
+[27/Nov/2024 09:16:13] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[27/Nov/2024 09:16:17] "GET /dynamic-content/ HTTP/1.1" 200 1324
+[27/Nov/2024 09:16:17] "GET /static/js/script_overlay.js HTTP/1.1" 404 1874
+[27/Nov/2024 09:16:27] "GET /admin/ HTTP/1.1" 302 0
+[27/Nov/2024 09:16:27] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[27/Nov/2024 09:16:32] "GET /admin_section/contact/ HTTP/1.1" 200 1633
+[27/Nov/2024 09:16:32] "GET /static/js/script_overlay.js HTTP/1.1" 404 1874
+Watching for file changes with StatReloader
+[28/Nov/2024 14:11:38] "GET /admin/ HTTP/1.1" 302 0
+[28/Nov/2024 14:11:38] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[28/Nov/2024 14:12:29] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 44, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 63, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/stefanDoddsAdmin/urls.py", line 23, in <module>
+    from .views import home_view, dynamic_content  # Import your home view here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'dynamic_content' from 'stefanDoddsAdmin.views' (/var/www/stefandodds.ie/django/admin/stefanDoddsAdmin/stefanDoddsAdmin/views.py)
+Watching for file changes with StatReloader
+[28/Nov/2024 18:47:45] "GET /admin/ HTTP/1.1" 302 0
+[28/Nov/2024 18:47:45] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+[28/Nov/2024 18:48:32] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4324
+Watching for file changes with StatReloader
+Error: That port is already in use.
+[28/Nov/2024 18:51:28] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4324
+[28/Nov/2024 18:51:41] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[28/Nov/2024 18:51:41] "GET /admin/ HTTP/1.1" 200 5855
+[28/Nov/2024 18:51:41] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[28/Nov/2024 18:51:41] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[28/Nov/2024 18:51:41] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[28/Nov/2024 18:51:54] "POST /admin/logout/ HTTP/1.1" 200 3555
+[28/Nov/2024 18:51:57] "GET /admin/ HTTP/1.1" 302 0
+[28/Nov/2024 18:51:57] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 05:08:02] "GET / HTTP/1.1" 400 68190
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[29/Nov/2024 05:08:02] "GET /favicon.ico HTTP/1.1" 400 68201
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:31:35] "GET / HTTP/1.1" 400 67220
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:31:56] "GET / HTTP/1.1" 400 67592
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:33:50] "GET / HTTP/1.1" 400 67595
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:36:03] "GET / HTTP/1.1" 400 67593
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:38:03] "GET / HTTP/1.1" 400 67594
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:39:51] "GET / HTTP/1.1" 400 67593
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:40:50] "GET / HTTP/1.1" 400 67595
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:43:06] "GET / HTTP/1.1" 400 67594
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:44:52] "GET / HTTP/1.1" 400 67594
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:45:53] "GET / HTTP/1.1" 400 67592
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:47:54] "GET / HTTP/1.1" 400 67593
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:49:51] "GET / HTTP/1.1" 400 67594
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:50:54] "GET / HTTP/1.1" 400 67594
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:52:04] "GET / HTTP/1.1" 400 67591
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:53:55] "GET / HTTP/1.1" 400 67595
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:54:56] "GET / HTTP/1.1" 400 67593
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:56:56] "GET / HTTP/1.1" 400 67595
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:57:54] "GET / HTTP/1.1" 400 67595
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 11:59:02] "GET / HTTP/1.1" 400 67592
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 12:00:51] "GET / HTTP/1.1" 400 67593
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 12:02:00] "GET / HTTP/1.1" 400 67591
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[29/Nov/2024 20:53:00] "GET / HTTP/1.1" 400 67741
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[30/Nov/2024 20:48:17] "GET / HTTP/1.1" 400 67527
+Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/var/www/stefandodds.ie/django/admin/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '93.127.202.67:8001'. You may need to add '93.127.202.67' to ALLOWED_HOSTS.
+Bad Request: /
+[02/Dec/2024 01:06:49] "GET / HTTP/1.1" 400 67740

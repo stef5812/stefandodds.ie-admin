@@ -1,0 +1,17 @@
+{% extends 'admin_section/base.html' %}
+{% block content %}
+
+<h1>Gallery</h1>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload</button>
+</form>
+<h2>Images:</h2>
+<div>
+    {% for image in images %}
+        <img src="{{ image.image.url }}" alt="Gallery Image" style="width:200px;"/>
+    {% endfor %}
+</div>
+
+{% endblock %}
